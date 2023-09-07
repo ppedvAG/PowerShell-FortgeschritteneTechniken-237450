@@ -29,17 +29,25 @@ AUSFÜHRLICH: Es wurden folgende Werte angegeben: 4634 , 5 , localhost
   570966 Sep 07 13:45  SuccessA... Microsoft-Windows...         4634 Ein Konto wurde abgemeldet....
   570963 Sep 07 13:44  SuccessA... Microsoft-Windows...         4634 Ein Konto wurde abgemeldet....
 .LINK
-https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-5.1#comment-based-help-keywords
+ https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-5.1#comment-based-help-keywords
 #>
 [cmdletbinding()]
 param(
 [Parameter(Mandatory=$true)]
+[ValidateSet(4624,4625,4634)]
 [int]$Eventid,
 
+[ValidateRange(5,10)]
 [int]$Newest = 5,
 
-[string]$Computername = "localhost"
+[ValidateScript({Test-NetConnection -computername $PSItem -commonTCPPort WinRm})]
+[string]$Computername = "localhost",
+
+[ValidatePattern()]
+[string]$fname
 )
+$Newest = 3
+
 Write-Verbose -Message "Es wurden folgende Werte angegeben: $Eventid , $Newest , $Computername"
 Get-EventLog -LogName Security -ComputerName $Computername | Where-Object EventId -eq $Eventid | Select-Object -First $Newest
 
