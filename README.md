@@ -5,4 +5,12 @@ Agenda:
 - Einweisung
 - Neuerungen
 - Git
-- 
+- Tipps & Tricks
+- Pipelineübergabe
+- Skriptsicherheit
+- Scripting
+    - Parameter
+    - Parameter Validierung
+    - Parameter Attribute
+    - comment based help
+    - Scripting Übung
