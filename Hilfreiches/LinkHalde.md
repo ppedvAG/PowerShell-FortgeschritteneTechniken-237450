@@ -5,3 +5,7 @@
 [Comment Based Help](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-5.1#comment-based-help-keywords)
 
 [Standardisierte Verben](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-5.1)
+
+[PSProfile](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-5.1)
+
+[Prompt](https://learn.microsoft.com/de-de/powershell/module/microsoft.powershell.core/about/about_prompts?view=powershell-5.1)
