@@ -14,3 +14,13 @@ Agenda:
     - Parameter Attribute
     - comment based help
     - Scripting Übung
+- - - 
+- Function
+- ScriptModul
+    - Modulmanifest
+- Fehlerbehandlung
+    - Write-Debug
+    - ErrorAction
+    - Terminating vs Non Terminating Erros
+    - try catch finally
+    
