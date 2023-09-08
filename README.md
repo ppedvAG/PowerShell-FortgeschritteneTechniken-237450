@@ -23,4 +23,11 @@ Agenda:
     - ErrorAction
     - Terminating vs Non Terminating Erros
     - try catch finally
-    
+- PSProfile
+- prompt Function
+- PowerShell Classes
+    - Properties
+    - Konstruktoren
+    - Methoden
+    - Vereerbung
+- Enum
